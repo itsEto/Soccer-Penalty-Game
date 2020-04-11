@@ -129,8 +129,8 @@ def check_winner_diff(player1_goals, player2_goals, tries): #for best of five
     elif ((player2_goals - player1_goals) >= 3):
         print_game.print_winner(True)
         return True
-    #for score 4:2
-    elif (tries == 8):
+    #for score 4:2 and 5:3 
+    elif (tries == 8 or tries == 9):
         if ((player1_goals - player2_goals) == 2):
             print_game.print_winner(False)
             return True
